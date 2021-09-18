@@ -45,7 +45,7 @@ func MaxLength(name string, value string, length int) Rule {
 	}
 }
 
-func Skip() Rule {
+func None() Rule {
 	return rule{
 		validFunc: func() error {
 			return nil

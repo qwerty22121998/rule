@@ -16,8 +16,8 @@ func (v validIf) Validate() error {
 func If(rule Rule) validIf {
 	return validIf{
 		con:  rule,
-		then: Skip(),
-		el:   Skip(),
+		then: None(),
+		el:   None(),
 	}
 }
 
